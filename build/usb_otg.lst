@@ -1,0 +1,526 @@
+ARM GAS  /tmp/ccY3CSXf.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.arch armv7e-m
+   3              		.fpu fpv5-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"usb_otg.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.MX_USB_OTG_FS_PCD_Init,"ax",%progbits
+  20              		.align	1
+  21              		.global	MX_USB_OTG_FS_PCD_Init
+  22              		.syntax unified
+  23              		.thumb
+  24              		.thumb_func
+  26              	MX_USB_OTG_FS_PCD_Init:
+  27              	.LFB141:
+  28              		.file 1 "Core/Src/usb_otg.c"
+   1:Core/Src/usb_otg.c **** /**
+   2:Core/Src/usb_otg.c ****   ******************************************************************************
+   3:Core/Src/usb_otg.c ****   * @file    usb_otg.c
+   4:Core/Src/usb_otg.c ****   * @brief   This file provides code for the configuration
+   5:Core/Src/usb_otg.c ****   *          of the USB_OTG instances.
+   6:Core/Src/usb_otg.c ****   ******************************************************************************
+   7:Core/Src/usb_otg.c ****   * @attention
+   8:Core/Src/usb_otg.c ****   *
+   9:Core/Src/usb_otg.c ****   * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
+  10:Core/Src/usb_otg.c ****   * All rights reserved.</center></h2>
+  11:Core/Src/usb_otg.c ****   *
+  12:Core/Src/usb_otg.c ****   * This software component is licensed by ST under Ultimate Liberty license
+  13:Core/Src/usb_otg.c ****   * SLA0044, the "License"; You may not use this file except in compliance with
+  14:Core/Src/usb_otg.c ****   * the License. You may obtain a copy of the License at:
+  15:Core/Src/usb_otg.c ****   *                             www.st.com/SLA0044
+  16:Core/Src/usb_otg.c ****   *
+  17:Core/Src/usb_otg.c ****   ******************************************************************************
+  18:Core/Src/usb_otg.c ****   */
+  19:Core/Src/usb_otg.c **** 
+  20:Core/Src/usb_otg.c **** /* Includes ------------------------------------------------------------------*/
+  21:Core/Src/usb_otg.c **** #include "usb_otg.h"
+  22:Core/Src/usb_otg.c **** 
+  23:Core/Src/usb_otg.c **** /* USER CODE BEGIN 0 */
+  24:Core/Src/usb_otg.c **** 
+  25:Core/Src/usb_otg.c **** /* USER CODE END 0 */
+  26:Core/Src/usb_otg.c **** 
+  27:Core/Src/usb_otg.c **** PCD_HandleTypeDef hpcd_USB_OTG_FS;
+  28:Core/Src/usb_otg.c **** 
+  29:Core/Src/usb_otg.c **** /* USB_OTG_FS init function */
+  30:Core/Src/usb_otg.c **** 
+ARM GAS  /tmp/ccY3CSXf.s 			page 2
+
+
+  31:Core/Src/usb_otg.c **** void MX_USB_OTG_FS_PCD_Init(void)
+  32:Core/Src/usb_otg.c **** {
+  29              		.loc 1 32 1 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 08B5     		push	{r3, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 3, -8
+  37              		.cfi_offset 14, -4
+  33:Core/Src/usb_otg.c **** 
+  34:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_Init 0 */
+  35:Core/Src/usb_otg.c **** 
+  36:Core/Src/usb_otg.c ****   /* USER CODE END USB_OTG_FS_Init 0 */
+  37:Core/Src/usb_otg.c **** 
+  38:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_Init 1 */
+  39:Core/Src/usb_otg.c **** 
+  40:Core/Src/usb_otg.c ****   /* USER CODE END USB_OTG_FS_Init 1 */
+  41:Core/Src/usb_otg.c ****   hpcd_USB_OTG_FS.Instance = USB_OTG_FS;
+  38              		.loc 1 41 3 view .LVU1
+  39              		.loc 1 41 28 is_stmt 0 view .LVU2
+  40 0002 0C48     		ldr	r0, .L5
+  41 0004 4FF0A043 		mov	r3, #1342177280
+  42 0008 0360     		str	r3, [r0]
+  42:Core/Src/usb_otg.c ****   hpcd_USB_OTG_FS.Init.dev_endpoints = 6;
+  43              		.loc 1 42 3 is_stmt 1 view .LVU3
+  44              		.loc 1 42 38 is_stmt 0 view .LVU4
+  45 000a 0623     		movs	r3, #6
+  46 000c 4360     		str	r3, [r0, #4]
+  43:Core/Src/usb_otg.c ****   hpcd_USB_OTG_FS.Init.speed = PCD_SPEED_FULL;
+  47              		.loc 1 43 3 is_stmt 1 view .LVU5
+  48              		.loc 1 43 30 is_stmt 0 view .LVU6
+  49 000e 0222     		movs	r2, #2
+  50 0010 C260     		str	r2, [r0, #12]
+  44:Core/Src/usb_otg.c ****   hpcd_USB_OTG_FS.Init.dma_enable = DISABLE;
+  51              		.loc 1 44 3 is_stmt 1 view .LVU7
+  52              		.loc 1 44 35 is_stmt 0 view .LVU8
+  53 0012 0023     		movs	r3, #0
+  54 0014 0361     		str	r3, [r0, #16]
+  45:Core/Src/usb_otg.c ****   hpcd_USB_OTG_FS.Init.phy_itface = PCD_PHY_EMBEDDED;
+  55              		.loc 1 45 3 is_stmt 1 view .LVU9
+  56              		.loc 1 45 35 is_stmt 0 view .LVU10
+  57 0016 8261     		str	r2, [r0, #24]
+  46:Core/Src/usb_otg.c ****   hpcd_USB_OTG_FS.Init.Sof_enable = ENABLE;
+  58              		.loc 1 46 3 is_stmt 1 view .LVU11
+  59              		.loc 1 46 35 is_stmt 0 view .LVU12
+  60 0018 0122     		movs	r2, #1
+  61 001a C261     		str	r2, [r0, #28]
+  47:Core/Src/usb_otg.c ****   hpcd_USB_OTG_FS.Init.low_power_enable = DISABLE;
+  62              		.loc 1 47 3 is_stmt 1 view .LVU13
+  63              		.loc 1 47 41 is_stmt 0 view .LVU14
+  64 001c 0362     		str	r3, [r0, #32]
+  48:Core/Src/usb_otg.c ****   hpcd_USB_OTG_FS.Init.lpm_enable = DISABLE;
+  65              		.loc 1 48 3 is_stmt 1 view .LVU15
+  66              		.loc 1 48 35 is_stmt 0 view .LVU16
+  67 001e 4362     		str	r3, [r0, #36]
+ARM GAS  /tmp/ccY3CSXf.s 			page 3
+
+
+  49:Core/Src/usb_otg.c ****   hpcd_USB_OTG_FS.Init.vbus_sensing_enable = ENABLE;
+  68              		.loc 1 49 3 is_stmt 1 view .LVU17
+  69              		.loc 1 49 44 is_stmt 0 view .LVU18
+  70 0020 C262     		str	r2, [r0, #44]
+  50:Core/Src/usb_otg.c ****   hpcd_USB_OTG_FS.Init.use_dedicated_ep1 = DISABLE;
+  71              		.loc 1 50 3 is_stmt 1 view .LVU19
+  72              		.loc 1 50 42 is_stmt 0 view .LVU20
+  73 0022 0363     		str	r3, [r0, #48]
+  51:Core/Src/usb_otg.c ****   if (HAL_PCD_Init(&hpcd_USB_OTG_FS) != HAL_OK)
+  74              		.loc 1 51 3 is_stmt 1 view .LVU21
+  75              		.loc 1 51 7 is_stmt 0 view .LVU22
+  76 0024 FFF7FEFF 		bl	HAL_PCD_Init
+  77              	.LVL0:
+  78              		.loc 1 51 6 view .LVU23
+  79 0028 00B9     		cbnz	r0, .L4
+  80              	.L1:
+  52:Core/Src/usb_otg.c ****   {
+  53:Core/Src/usb_otg.c ****     Error_Handler();
+  54:Core/Src/usb_otg.c ****   }
+  55:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_Init 2 */
+  56:Core/Src/usb_otg.c **** 
+  57:Core/Src/usb_otg.c ****   /* USER CODE END USB_OTG_FS_Init 2 */
+  58:Core/Src/usb_otg.c **** 
+  59:Core/Src/usb_otg.c **** }
+  81              		.loc 1 59 1 view .LVU24
+  82 002a 08BD     		pop	{r3, pc}
+  83              	.L4:
+  53:Core/Src/usb_otg.c ****   }
+  84              		.loc 1 53 5 is_stmt 1 view .LVU25
+  85 002c FFF7FEFF 		bl	Error_Handler
+  86              	.LVL1:
+  87              		.loc 1 59 1 is_stmt 0 view .LVU26
+  88 0030 FBE7     		b	.L1
+  89              	.L6:
+  90 0032 00BF     		.align	2
+  91              	.L5:
+  92 0034 00000000 		.word	.LANCHOR0
+  93              		.cfi_endproc
+  94              	.LFE141:
+  96              		.section	.text.HAL_PCD_MspInit,"ax",%progbits
+  97              		.align	1
+  98              		.global	HAL_PCD_MspInit
+  99              		.syntax unified
+ 100              		.thumb
+ 101              		.thumb_func
+ 103              	HAL_PCD_MspInit:
+ 104              	.LVL2:
+ 105              	.LFB142:
+  60:Core/Src/usb_otg.c **** 
+  61:Core/Src/usb_otg.c **** void HAL_PCD_MspInit(PCD_HandleTypeDef* pcdHandle)
+  62:Core/Src/usb_otg.c **** {
+ 106              		.loc 1 62 1 is_stmt 1 view -0
+ 107              		.cfi_startproc
+ 108              		@ args = 0, pretend = 0, frame = 32
+ 109              		@ frame_needed = 0, uses_anonymous_args = 0
+ 110              		.loc 1 62 1 is_stmt 0 view .LVU28
+ 111 0000 30B5     		push	{r4, r5, lr}
+ARM GAS  /tmp/ccY3CSXf.s 			page 4
+
+
+ 112              	.LCFI1:
+ 113              		.cfi_def_cfa_offset 12
+ 114              		.cfi_offset 4, -12
+ 115              		.cfi_offset 5, -8
+ 116              		.cfi_offset 14, -4
+ 117 0002 89B0     		sub	sp, sp, #36
+ 118              	.LCFI2:
+ 119              		.cfi_def_cfa_offset 48
+  63:Core/Src/usb_otg.c **** 
+  64:Core/Src/usb_otg.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
+ 120              		.loc 1 64 3 is_stmt 1 view .LVU29
+ 121              		.loc 1 64 20 is_stmt 0 view .LVU30
+ 122 0004 0023     		movs	r3, #0
+ 123 0006 0393     		str	r3, [sp, #12]
+ 124 0008 0493     		str	r3, [sp, #16]
+ 125 000a 0593     		str	r3, [sp, #20]
+ 126 000c 0693     		str	r3, [sp, #24]
+ 127 000e 0793     		str	r3, [sp, #28]
+  65:Core/Src/usb_otg.c ****   if(pcdHandle->Instance==USB_OTG_FS)
+ 128              		.loc 1 65 3 is_stmt 1 view .LVU31
+ 129              		.loc 1 65 15 is_stmt 0 view .LVU32
+ 130 0010 0368     		ldr	r3, [r0]
+ 131              		.loc 1 65 5 view .LVU33
+ 132 0012 B3F1A04F 		cmp	r3, #1342177280
+ 133 0016 01D0     		beq	.L10
+ 134              	.LVL3:
+ 135              	.L7:
+  66:Core/Src/usb_otg.c ****   {
+  67:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 0 */
+  68:Core/Src/usb_otg.c **** 
+  69:Core/Src/usb_otg.c ****   /* USER CODE END USB_OTG_FS_MspInit 0 */
+  70:Core/Src/usb_otg.c **** 
+  71:Core/Src/usb_otg.c ****     __HAL_RCC_GPIOA_CLK_ENABLE();
+  72:Core/Src/usb_otg.c ****     /**USB_OTG_FS GPIO Configuration
+  73:Core/Src/usb_otg.c ****     PA8     ------> USB_OTG_FS_SOF
+  74:Core/Src/usb_otg.c ****     PA9     ------> USB_OTG_FS_VBUS
+  75:Core/Src/usb_otg.c ****     PA10     ------> USB_OTG_FS_ID
+  76:Core/Src/usb_otg.c ****     PA11     ------> USB_OTG_FS_DM
+  77:Core/Src/usb_otg.c ****     PA12     ------> USB_OTG_FS_DP
+  78:Core/Src/usb_otg.c ****     */
+  79:Core/Src/usb_otg.c ****     GPIO_InitStruct.Pin = USB_SOF_Pin|USB_ID_Pin|USB_DM_Pin|USB_DP_Pin;
+  80:Core/Src/usb_otg.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  81:Core/Src/usb_otg.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+  82:Core/Src/usb_otg.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+  83:Core/Src/usb_otg.c ****     GPIO_InitStruct.Alternate = GPIO_AF10_OTG_FS;
+  84:Core/Src/usb_otg.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  85:Core/Src/usb_otg.c **** 
+  86:Core/Src/usb_otg.c ****     GPIO_InitStruct.Pin = USB_VBUS_Pin;
+  87:Core/Src/usb_otg.c ****     GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  88:Core/Src/usb_otg.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+  89:Core/Src/usb_otg.c ****     HAL_GPIO_Init(USB_VBUS_GPIO_Port, &GPIO_InitStruct);
+  90:Core/Src/usb_otg.c **** 
+  91:Core/Src/usb_otg.c ****     /* USB_OTG_FS clock enable */
+  92:Core/Src/usb_otg.c ****     __HAL_RCC_USB_OTG_FS_CLK_ENABLE();
+  93:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+  94:Core/Src/usb_otg.c **** 
+  95:Core/Src/usb_otg.c ****   /* USER CODE END USB_OTG_FS_MspInit 1 */
+ARM GAS  /tmp/ccY3CSXf.s 			page 5
+
+
+  96:Core/Src/usb_otg.c ****   }
+  97:Core/Src/usb_otg.c **** }
+ 136              		.loc 1 97 1 view .LVU34
+ 137 0018 09B0     		add	sp, sp, #36
+ 138              	.LCFI3:
+ 139              		.cfi_remember_state
+ 140              		.cfi_def_cfa_offset 12
+ 141              		@ sp needed
+ 142 001a 30BD     		pop	{r4, r5, pc}
+ 143              	.LVL4:
+ 144              	.L10:
+ 145              	.LCFI4:
+ 146              		.cfi_restore_state
+  71:Core/Src/usb_otg.c ****     /**USB_OTG_FS GPIO Configuration
+ 147              		.loc 1 71 5 is_stmt 1 view .LVU35
+ 148              	.LBB2:
+  71:Core/Src/usb_otg.c ****     /**USB_OTG_FS GPIO Configuration
+ 149              		.loc 1 71 5 view .LVU36
+  71:Core/Src/usb_otg.c ****     /**USB_OTG_FS GPIO Configuration
+ 150              		.loc 1 71 5 view .LVU37
+ 151 001c 1A4C     		ldr	r4, .L11
+ 152 001e 236B     		ldr	r3, [r4, #48]
+ 153 0020 43F00103 		orr	r3, r3, #1
+ 154 0024 2363     		str	r3, [r4, #48]
+  71:Core/Src/usb_otg.c ****     /**USB_OTG_FS GPIO Configuration
+ 155              		.loc 1 71 5 view .LVU38
+ 156 0026 236B     		ldr	r3, [r4, #48]
+ 157 0028 03F00103 		and	r3, r3, #1
+ 158 002c 0093     		str	r3, [sp]
+  71:Core/Src/usb_otg.c ****     /**USB_OTG_FS GPIO Configuration
+ 159              		.loc 1 71 5 view .LVU39
+ 160 002e 009B     		ldr	r3, [sp]
+ 161              	.LBE2:
+  71:Core/Src/usb_otg.c ****     /**USB_OTG_FS GPIO Configuration
+ 162              		.loc 1 71 5 view .LVU40
+  79:Core/Src/usb_otg.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 163              		.loc 1 79 5 view .LVU41
+  79:Core/Src/usb_otg.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 164              		.loc 1 79 25 is_stmt 0 view .LVU42
+ 165 0030 4FF4E853 		mov	r3, #7424
+ 166 0034 0393     		str	r3, [sp, #12]
+  80:Core/Src/usb_otg.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 167              		.loc 1 80 5 is_stmt 1 view .LVU43
+  80:Core/Src/usb_otg.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 168              		.loc 1 80 26 is_stmt 0 view .LVU44
+ 169 0036 0223     		movs	r3, #2
+ 170 0038 0493     		str	r3, [sp, #16]
+  81:Core/Src/usb_otg.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+ 171              		.loc 1 81 5 is_stmt 1 view .LVU45
+  82:Core/Src/usb_otg.c ****     GPIO_InitStruct.Alternate = GPIO_AF10_OTG_FS;
+ 172              		.loc 1 82 5 view .LVU46
+  82:Core/Src/usb_otg.c ****     GPIO_InitStruct.Alternate = GPIO_AF10_OTG_FS;
+ 173              		.loc 1 82 27 is_stmt 0 view .LVU47
+ 174 003a 0323     		movs	r3, #3
+ 175 003c 0693     		str	r3, [sp, #24]
+  83:Core/Src/usb_otg.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+ 176              		.loc 1 83 5 is_stmt 1 view .LVU48
+ARM GAS  /tmp/ccY3CSXf.s 			page 6
+
+
+  83:Core/Src/usb_otg.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+ 177              		.loc 1 83 31 is_stmt 0 view .LVU49
+ 178 003e 0A23     		movs	r3, #10
+ 179 0040 0793     		str	r3, [sp, #28]
+  84:Core/Src/usb_otg.c **** 
+ 180              		.loc 1 84 5 is_stmt 1 view .LVU50
+ 181 0042 124D     		ldr	r5, .L11+4
+ 182 0044 03A9     		add	r1, sp, #12
+ 183 0046 2846     		mov	r0, r5
+ 184              	.LVL5:
+  84:Core/Src/usb_otg.c **** 
+ 185              		.loc 1 84 5 is_stmt 0 view .LVU51
+ 186 0048 FFF7FEFF 		bl	HAL_GPIO_Init
+ 187              	.LVL6:
+  86:Core/Src/usb_otg.c ****     GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+ 188              		.loc 1 86 5 is_stmt 1 view .LVU52
+  86:Core/Src/usb_otg.c ****     GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+ 189              		.loc 1 86 25 is_stmt 0 view .LVU53
+ 190 004c 4FF40073 		mov	r3, #512
+ 191 0050 0393     		str	r3, [sp, #12]
+  87:Core/Src/usb_otg.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 192              		.loc 1 87 5 is_stmt 1 view .LVU54
+  87:Core/Src/usb_otg.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 193              		.loc 1 87 26 is_stmt 0 view .LVU55
+ 194 0052 0023     		movs	r3, #0
+ 195 0054 0493     		str	r3, [sp, #16]
+  88:Core/Src/usb_otg.c ****     HAL_GPIO_Init(USB_VBUS_GPIO_Port, &GPIO_InitStruct);
+ 196              		.loc 1 88 5 is_stmt 1 view .LVU56
+  88:Core/Src/usb_otg.c ****     HAL_GPIO_Init(USB_VBUS_GPIO_Port, &GPIO_InitStruct);
+ 197              		.loc 1 88 26 is_stmt 0 view .LVU57
+ 198 0056 0593     		str	r3, [sp, #20]
+  89:Core/Src/usb_otg.c **** 
+ 199              		.loc 1 89 5 is_stmt 1 view .LVU58
+ 200 0058 03A9     		add	r1, sp, #12
+ 201 005a 2846     		mov	r0, r5
+ 202 005c FFF7FEFF 		bl	HAL_GPIO_Init
+ 203              	.LVL7:
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 204              		.loc 1 92 5 view .LVU59
+ 205              	.LBB3:
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 206              		.loc 1 92 5 view .LVU60
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 207              		.loc 1 92 5 view .LVU61
+ 208 0060 636B     		ldr	r3, [r4, #52]
+ 209 0062 43F08003 		orr	r3, r3, #128
+ 210 0066 6363     		str	r3, [r4, #52]
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 211              		.loc 1 92 5 view .LVU62
+ 212 0068 636B     		ldr	r3, [r4, #52]
+ 213 006a 03F08003 		and	r3, r3, #128
+ 214 006e 0193     		str	r3, [sp, #4]
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 215              		.loc 1 92 5 view .LVU63
+ 216 0070 019B     		ldr	r3, [sp, #4]
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 217              		.loc 1 92 5 view .LVU64
+ARM GAS  /tmp/ccY3CSXf.s 			page 7
+
+
+ 218              	.LBB4:
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 219              		.loc 1 92 5 view .LVU65
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 220              		.loc 1 92 5 view .LVU66
+ 221 0072 636C     		ldr	r3, [r4, #68]
+ 222 0074 43F48043 		orr	r3, r3, #16384
+ 223 0078 6364     		str	r3, [r4, #68]
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 224              		.loc 1 92 5 view .LVU67
+ 225 007a 636C     		ldr	r3, [r4, #68]
+ 226 007c 03F48043 		and	r3, r3, #16384
+ 227 0080 0293     		str	r3, [sp, #8]
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 228              		.loc 1 92 5 view .LVU68
+ 229 0082 029B     		ldr	r3, [sp, #8]
+ 230              	.LBE4:
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 231              		.loc 1 92 5 view .LVU69
+ 232              	.LBE3:
+  92:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspInit 1 */
+ 233              		.loc 1 92 5 view .LVU70
+ 234              		.loc 1 97 1 is_stmt 0 view .LVU71
+ 235 0084 C8E7     		b	.L7
+ 236              	.L12:
+ 237 0086 00BF     		.align	2
+ 238              	.L11:
+ 239 0088 00380240 		.word	1073887232
+ 240 008c 00000240 		.word	1073872896
+ 241              		.cfi_endproc
+ 242              	.LFE142:
+ 244              		.section	.text.HAL_PCD_MspDeInit,"ax",%progbits
+ 245              		.align	1
+ 246              		.global	HAL_PCD_MspDeInit
+ 247              		.syntax unified
+ 248              		.thumb
+ 249              		.thumb_func
+ 251              	HAL_PCD_MspDeInit:
+ 252              	.LVL8:
+ 253              	.LFB143:
+  98:Core/Src/usb_otg.c **** 
+  99:Core/Src/usb_otg.c **** void HAL_PCD_MspDeInit(PCD_HandleTypeDef* pcdHandle)
+ 100:Core/Src/usb_otg.c **** {
+ 254              		.loc 1 100 1 is_stmt 1 view -0
+ 255              		.cfi_startproc
+ 256              		@ args = 0, pretend = 0, frame = 0
+ 257              		@ frame_needed = 0, uses_anonymous_args = 0
+ 258              		.loc 1 100 1 is_stmt 0 view .LVU73
+ 259 0000 08B5     		push	{r3, lr}
+ 260              	.LCFI5:
+ 261              		.cfi_def_cfa_offset 8
+ 262              		.cfi_offset 3, -8
+ 263              		.cfi_offset 14, -4
+ 101:Core/Src/usb_otg.c **** 
+ 102:Core/Src/usb_otg.c ****   if(pcdHandle->Instance==USB_OTG_FS)
+ 264              		.loc 1 102 3 is_stmt 1 view .LVU74
+ 265              		.loc 1 102 15 is_stmt 0 view .LVU75
+ARM GAS  /tmp/ccY3CSXf.s 			page 8
+
+
+ 266 0002 0368     		ldr	r3, [r0]
+ 267              		.loc 1 102 5 view .LVU76
+ 268 0004 B3F1A04F 		cmp	r3, #1342177280
+ 269 0008 00D0     		beq	.L16
+ 270              	.LVL9:
+ 271              	.L13:
+ 103:Core/Src/usb_otg.c ****   {
+ 104:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspDeInit 0 */
+ 105:Core/Src/usb_otg.c **** 
+ 106:Core/Src/usb_otg.c ****   /* USER CODE END USB_OTG_FS_MspDeInit 0 */
+ 107:Core/Src/usb_otg.c ****     /* Peripheral clock disable */
+ 108:Core/Src/usb_otg.c ****     __HAL_RCC_USB_OTG_FS_CLK_DISABLE();
+ 109:Core/Src/usb_otg.c **** 
+ 110:Core/Src/usb_otg.c ****     /**USB_OTG_FS GPIO Configuration
+ 111:Core/Src/usb_otg.c ****     PA8     ------> USB_OTG_FS_SOF
+ 112:Core/Src/usb_otg.c ****     PA9     ------> USB_OTG_FS_VBUS
+ 113:Core/Src/usb_otg.c ****     PA10     ------> USB_OTG_FS_ID
+ 114:Core/Src/usb_otg.c ****     PA11     ------> USB_OTG_FS_DM
+ 115:Core/Src/usb_otg.c ****     PA12     ------> USB_OTG_FS_DP
+ 116:Core/Src/usb_otg.c ****     */
+ 117:Core/Src/usb_otg.c ****     HAL_GPIO_DeInit(GPIOA, USB_SOF_Pin|USB_VBUS_Pin|USB_ID_Pin|USB_DM_Pin
+ 118:Core/Src/usb_otg.c ****                           |USB_DP_Pin);
+ 119:Core/Src/usb_otg.c **** 
+ 120:Core/Src/usb_otg.c ****   /* USER CODE BEGIN USB_OTG_FS_MspDeInit 1 */
+ 121:Core/Src/usb_otg.c **** 
+ 122:Core/Src/usb_otg.c ****   /* USER CODE END USB_OTG_FS_MspDeInit 1 */
+ 123:Core/Src/usb_otg.c ****   }
+ 124:Core/Src/usb_otg.c **** }
+ 272              		.loc 1 124 1 view .LVU77
+ 273 000a 08BD     		pop	{r3, pc}
+ 274              	.LVL10:
+ 275              	.L16:
+ 108:Core/Src/usb_otg.c **** 
+ 276              		.loc 1 108 5 is_stmt 1 view .LVU78
+ 277 000c 054A     		ldr	r2, .L17
+ 278 000e 536B     		ldr	r3, [r2, #52]
+ 279 0010 23F08003 		bic	r3, r3, #128
+ 280 0014 5363     		str	r3, [r2, #52]
+ 117:Core/Src/usb_otg.c ****                           |USB_DP_Pin);
+ 281              		.loc 1 117 5 view .LVU79
+ 282 0016 4FF4F851 		mov	r1, #7936
+ 283 001a 0348     		ldr	r0, .L17+4
+ 284              	.LVL11:
+ 117:Core/Src/usb_otg.c ****                           |USB_DP_Pin);
+ 285              		.loc 1 117 5 is_stmt 0 view .LVU80
+ 286 001c FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 287              	.LVL12:
+ 288              		.loc 1 124 1 view .LVU81
+ 289 0020 F3E7     		b	.L13
+ 290              	.L18:
+ 291 0022 00BF     		.align	2
+ 292              	.L17:
+ 293 0024 00380240 		.word	1073887232
+ 294 0028 00000240 		.word	1073872896
+ 295              		.cfi_endproc
+ 296              	.LFE143:
+ 298              		.global	hpcd_USB_OTG_FS
+ARM GAS  /tmp/ccY3CSXf.s 			page 9
+
+
+ 299              		.section	.bss.hpcd_USB_OTG_FS,"aw",%nobits
+ 300              		.align	2
+ 301              		.set	.LANCHOR0,. + 0
+ 304              	hpcd_USB_OTG_FS:
+ 305 0000 00000000 		.space	1028
+ 305      00000000 
+ 305      00000000 
+ 305      00000000 
+ 305      00000000 
+ 306              		.text
+ 307              	.Letext0:
+ 308              		.file 2 "/usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h"
+ 309              		.file 3 "/usr/share/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h"
+ 310              		.file 4 "Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f746xx.h"
+ 311              		.file 5 "Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h"
+ 312              		.file 6 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h"
+ 313              		.file 7 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_gpio.h"
+ 314              		.file 8 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usb.h"
+ 315              		.file 9 "Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pcd.h"
+ 316              		.file 10 "Core/Inc/main.h"
+ 317              		.file 11 "Core/Inc/usb_otg.h"
+ARM GAS  /tmp/ccY3CSXf.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 usb_otg.c
+     /tmp/ccY3CSXf.s:20     .text.MX_USB_OTG_FS_PCD_Init:0000000000000000 $t
+     /tmp/ccY3CSXf.s:26     .text.MX_USB_OTG_FS_PCD_Init:0000000000000000 MX_USB_OTG_FS_PCD_Init
+     /tmp/ccY3CSXf.s:92     .text.MX_USB_OTG_FS_PCD_Init:0000000000000034 $d
+     /tmp/ccY3CSXf.s:97     .text.HAL_PCD_MspInit:0000000000000000 $t
+     /tmp/ccY3CSXf.s:103    .text.HAL_PCD_MspInit:0000000000000000 HAL_PCD_MspInit
+     /tmp/ccY3CSXf.s:239    .text.HAL_PCD_MspInit:0000000000000088 $d
+     /tmp/ccY3CSXf.s:245    .text.HAL_PCD_MspDeInit:0000000000000000 $t
+     /tmp/ccY3CSXf.s:251    .text.HAL_PCD_MspDeInit:0000000000000000 HAL_PCD_MspDeInit
+     /tmp/ccY3CSXf.s:293    .text.HAL_PCD_MspDeInit:0000000000000024 $d
+     /tmp/ccY3CSXf.s:304    .bss.hpcd_USB_OTG_FS:0000000000000000 hpcd_USB_OTG_FS
+     /tmp/ccY3CSXf.s:300    .bss.hpcd_USB_OTG_FS:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+HAL_PCD_Init
+Error_Handler
+HAL_GPIO_Init
+HAL_GPIO_DeInit
