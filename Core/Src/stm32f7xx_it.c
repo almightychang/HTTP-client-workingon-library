@@ -43,8 +43,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-bool timeFlag = false;
-uint32_t timeCounter = 0;
 
 /* USER CODE END PV */
 
@@ -192,13 +190,6 @@ void SysTick_Handler(void)
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
 
-  timeCounter++;
-
-  if(timeCounter > 5000)
-  {
-    timeFlag = true;
-    timeCounter = 0;
-  }
   /* USER CODE END SysTick_IRQn 1 */
 }
 

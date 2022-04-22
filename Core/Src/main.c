@@ -27,7 +27,6 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdbool.h>
-#include "tcp_client.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,8 +46,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern struct netif gnetif;
-extern bool timeFlag;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -101,14 +98,6 @@ int main(void)
     /* USER CODE BEGIN WHILE */
     while (1)
     {
-
-        HTTPC_Run();
-
-        if(timeFlag)
-        {
-            timeFlag = false;
-            app_start_get_time();
-        }
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */

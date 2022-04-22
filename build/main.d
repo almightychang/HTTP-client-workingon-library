@@ -60,14 +60,7 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Middlewares/Third_Party/LwIP/src/include/lwip/dhcp.h \
  Middlewares/Third_Party/LwIP/src/include/lwip/timeouts.h \
  LWIP/Target/ethernetif.h Core/Inc/usart.h Core/Inc/main.h \
- Core/Inc/usb_otg.h Core/Inc/gpio.h Core/Inc/tcp_client.h \
- Middlewares/Third_Party/LwIP/src/include/lwip/tcp.h \
- Middlewares/Third_Party/LwIP/src/include/lwip/tcpbase.h \
- Middlewares/Third_Party/LwIP/src/include/lwip/ip.h \
- Middlewares/Third_Party/LwIP/src/include/lwip/ip6.h \
- Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h \
- Middlewares/Third_Party/LwIP/src/include/lwip/icmp.h \
- Middlewares/Third_Party/LwIP/src/include/lwip/prot/icmp.h
+ Core/Inc/usb_otg.h Core/Inc/gpio.h
 Core/Inc/main.h:
 Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 Core/Inc/stm32f7xx_hal_conf.h:
@@ -137,11 +130,3 @@ Core/Inc/usart.h:
 Core/Inc/main.h:
 Core/Inc/usb_otg.h:
 Core/Inc/gpio.h:
-Core/Inc/tcp_client.h:
-Middlewares/Third_Party/LwIP/src/include/lwip/tcp.h:
-Middlewares/Third_Party/LwIP/src/include/lwip/tcpbase.h:
-Middlewares/Third_Party/LwIP/src/include/lwip/ip.h:
-Middlewares/Third_Party/LwIP/src/include/lwip/ip6.h:
-Middlewares/Third_Party/LwIP/src/include/lwip/prot/ip.h:
-Middlewares/Third_Party/LwIP/src/include/lwip/icmp.h:
-Middlewares/Third_Party/LwIP/src/include/lwip/prot/icmp.h:

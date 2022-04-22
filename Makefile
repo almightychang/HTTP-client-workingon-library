@@ -36,7 +36,6 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
-STM32LIB-LWIP-HTTPclient/Target/httpc_platform.c \
 Core/Src/main.c \
 Core/Src/gpio.c \
 Core/Src/usart.c \
@@ -204,7 +203,7 @@ AS_INCLUDES =
 
 # C includes
 C_INCLUDES =  \
--ISTM32LIB-LWIP-HTTPclient/Target \
+-ISTM32LIB-LWIP-HTTPclient \
 -ICore/Inc \
 -ILWIP/App \
 -ILWIP/Target \

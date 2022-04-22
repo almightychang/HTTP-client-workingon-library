@@ -1,0 +1,109 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/joochul/Workspace/HTTP-CLIENT-F4746ZG/STM32LIB-LWIP-HTTPclient/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+HTTPC_CLIENT_AGENT	http_client.c	/^#define HTTPC_CLIENT_AGENT /;"	d	file:
+HTTPC_CONTENT_LEN_INVALID	http_client.c	/^#define HTTPC_CONTENT_LEN_INVALID /;"	d	file:
+HTTPC_PARSE_RX_DATA	http_client.c	/^    HTTPC_PARSE_RX_DATA$/;"	e	enum:ehttpc_parse_state	file:
+HTTPC_PARSE_RX_DATA	httpc.c	/^    HTTPC_PARSE_RX_DATA$/;"	e	enum:ehttpc_parse_state	file:
+HTTPC_PARSE_WAIT_FIRST_LINE	http_client.c	/^    HTTPC_PARSE_WAIT_FIRST_LINE = 0,$/;"	e	enum:ehttpc_parse_state	file:
+HTTPC_PARSE_WAIT_FIRST_LINE	httpc.c	/^    HTTPC_PARSE_WAIT_FIRST_LINE = 0,$/;"	e	enum:ehttpc_parse_state	file:
+HTTPC_PARSE_WAIT_HEADERS	http_client.c	/^    HTTPC_PARSE_WAIT_HEADERS,$/;"	e	enum:ehttpc_parse_state	file:
+HTTPC_PARSE_WAIT_HEADERS	httpc.c	/^    HTTPC_PARSE_WAIT_HEADERS,$/;"	e	enum:ehttpc_parse_state	file:
+HTTPC_POLL_INTERVAL	http_client.c	/^#define HTTPC_POLL_INTERVAL /;"	d	file:
+HTTPC_POLL_TIMEOUT	http_client.c	/^#define HTTPC_POLL_TIMEOUT /;"	d	file:
+HTTPC_REQ_11	http_client.c	/^#define HTTPC_REQ_11 /;"	d	file:
+HTTPC_REQ_11_FORMAT	http_client.c	/^#define HTTPC_REQ_11_FORMAT(/;"	d	file:
+HTTPC_REQ_11_HOST	http_client.c	/^#define HTTPC_REQ_11_HOST /;"	d	file:
+HTTPC_REQ_11_HOST_FORMAT	http_client.c	/^#define HTTPC_REQ_11_HOST_FORMAT(/;"	d	file:
+HTTPC_REQ_11_PROXY	http_client.c	/^#define HTTPC_REQ_11_PROXY /;"	d	file:
+HTTPC_REQ_11_PROXY_FORMAT	http_client.c	/^#define HTTPC_REQ_11_PROXY_FORMAT(/;"	d	file:
+HTTPC_REQ_11_PROXY_PORT	http_client.c	/^#define HTTPC_REQ_11_PROXY_PORT /;"	d	file:
+HTTPC_REQ_11_PROXY_PORT_FORMAT	http_client.c	/^#define HTTPC_REQ_11_PROXY_PORT_FORMAT(/;"	d	file:
+HTTPC_REQ_BASIC	httpc_api.h	/^#define HTTPC_REQ_BASIC /;"	d
+HTTPC_REQ_HOST	httpc_api.h	/^#define HTTPC_REQ_HOST /;"	d
+HTTPC_Run	httpc.old.c	/^void HTTPC_Run(void)$/;"	f	typeref:typename:void
+HTTP_GET	httpc_api.h	/^#define HTTP_GET /;"	d
+HTTP_POST	httpc_api.h	/^#define HTTP_POST /;"	d
+HTTP_PUT	httpc_api.h	/^#define HTTP_PUT /;"	d
+SERVER_IP_ADDR0	httpc_conf.h	/^#define SERVER_IP_ADDR0 /;"	d
+SERVER_IP_ADDR1	httpc_conf.h	/^#define SERVER_IP_ADDR1 /;"	d
+SERVER_IP_ADDR2	httpc_conf.h	/^#define SERVER_IP_ADDR2 /;"	d
+SERVER_IP_ADDR3	httpc_conf.h	/^#define SERVER_IP_ADDR3 /;"	d
+SERVER_PORT	httpc_conf.h	/^#define SERVER_PORT /;"	d
+__HTTPC_API_H	httpc_api.h	/^#define __HTTPC_API_H$/;"	d
+__HTTPC_CONF_H	httpc_conf.h	/^#define __HTTPC_CONF_H$/;"	d
+__HTTPC_H	httpc.h	/^#define __HTTPC_H$/;"	d
+_httpc_state	http_client.c	/^typedef struct _httpc_state {$/;"	s	file:
+_httpc_state	httpc.c	/^typedef struct _httpc_state {$/;"	s	file:
+app_close_conn	httpc.old.c	/^static void app_close_conn(void)$/;"	f	typeref:typename:void	file:
+app_open_conn	httpc.old.c	/^static void app_open_conn(void)$/;"	f	typeref:typename:void	file:
+app_send_data	httpc.old.c	/^static void app_send_data(void *pData, u16_t len)$/;"	f	typeref:typename:void	file:
+callback_arg	http_client.c	/^    void* callback_arg;$/;"	m	struct:_httpc_state	typeref:typename:void *	file:
+callback_arg	httpc.c	/^    void* callback_arg;$/;"	m	struct:_httpc_state	typeref:typename:void *	file:
+conn_settings	http_client.c	/^    const httpc_connection_t *conn_settings;$/;"	m	struct:_httpc_state	typeref:typename:const httpc_connection_t *	file:
+conn_settings	httpc.c	/^    const httpc_connection_t *conn_settings;$/;"	m	struct:_httpc_state	typeref:typename:const httpc_connection_t *	file:
+ehttpc_parse_state	http_client.c	/^typedef enum ehttpc_parse_state {$/;"	g	file:
+ehttpc_parse_state	httpc.c	/^typedef enum ehttpc_parse_state {$/;"	g	file:
+ethernetif_notify_conn_changed	httpc.old.c	/^void ethernetif_notify_conn_changed(struct netif *netif)$/;"	f	typeref:typename:void
+hdr_content_len	http_client.c	/^    u32_t hdr_content_len;$/;"	m	struct:_httpc_state	typeref:typename:u32_t	file:
+hdr_content_len	httpc.c	/^    u32_t hdr_content_len;$/;"	m	struct:_httpc_state	typeref:typename:u32_t	file:
+http_parse_response_status	http_client.c	/^http_parse_response_status(struct pbuf *p, u16_t *http_version, u16_t *http_status, u16_t *http_/;"	f	typeref:typename:err_t	file:
+http_wait_headers	http_client.c	/^http_wait_headers(struct pbuf *p, u32_t *content_length, u16_t *total_header_len)$/;"	f	typeref:typename:err_t	file:
+http_wait_headers	httpc.c	/^http_wait_headers(struct pbuf *p, u32_t *content_length, u16_t *total_header_len)$/;"	f	typeref:typename:err_t	file:
+httpc_close	http_client.c	/^httpc_close(httpc_state_t* req, httpc_result_t result, u32_t server_response, err_t err)$/;"	f	typeref:typename:err_t	file:
+httpc_create_request_string	http_client.c	/^httpc_create_request_string(const httpc_connection_t *settings, const char* server_name, int ser/;"	f	typeref:typename:int	file:
+httpc_dns_found	http_client.c	/^httpc_dns_found(const char* hostname, const ip_addr_t *ipaddr, void *arg)$/;"	f	typeref:typename:void	file:
+httpc_free_state	http_client.c	/^httpc_free_state(httpc_state_t* req)$/;"	f	typeref:typename:err_t	file:
+httpc_get_file	http_client.c	/^httpc_get_file(const ip_addr_t* server_addr, u16_t port, const char* uri, const httpc_connection/;"	f	typeref:typename:err_t
+httpc_get_file_dns	http_client.c	/^httpc_get_file_dns(const char* server_name, u16_t port, const char* uri, const httpc_connection_/;"	f	typeref:typename:err_t
+httpc_get_internal_addr	http_client.c	/^httpc_get_internal_addr(httpc_state_t* req, const ip_addr_t *ipaddr)$/;"	f	typeref:typename:err_t	file:
+httpc_get_internal_dns	http_client.c	/^httpc_get_internal_dns(httpc_state_t* req, const char* server_name)$/;"	f	typeref:typename:err_t	file:
+httpc_init_connection	http_client.c	/^httpc_init_connection(httpc_state_t **connection, const httpc_connection_t *settings, const char/;"	f	typeref:typename:err_t	file:
+httpc_init_connection_addr	http_client.c	/^httpc_init_connection_addr(httpc_state_t **connection, const httpc_connection_t *settings,$/;"	f	typeref:typename:err_t	file:
+httpc_init_connection_common	http_client.c	/^httpc_init_connection_common(httpc_state_t **connection, const httpc_connection_t *settings, con/;"	f	typeref:typename:err_t	file:
+httpc_parse_state_t	http_client.c	/^} httpc_parse_state_t;$/;"	t	typeref:enum:ehttpc_parse_state	file:
+httpc_parse_state_t	httpc.c	/^} httpc_parse_state_t;$/;"	t	typeref:enum:ehttpc_parse_state	file:
+httpc_state_t	http_client.c	/^} httpc_state_t;$/;"	t	typeref:struct:_httpc_state	file:
+httpc_state_t	httpc.c	/^} httpc_state_t;$/;"	t	typeref:struct:_httpc_state	file:
+httpc_tcp_connected	http_client.c	/^httpc_tcp_connected(void *arg, struct altcp_pcb *pcb, err_t err)$/;"	f	typeref:typename:err_t	file:
+httpc_tcp_err	http_client.c	/^httpc_tcp_err(void *arg, err_t err)$/;"	f	typeref:typename:void	file:
+httpc_tcp_poll	http_client.c	/^httpc_tcp_poll(void *arg, struct altcp_pcb *pcb)$/;"	f	typeref:typename:err_t	file:
+httpc_tcp_recv	http_client.c	/^httpc_tcp_recv(void *arg, struct altcp_pcb *pcb, struct pbuf *p, err_t r)$/;"	f	typeref:typename:err_t	file:
+httpc_tcp_sent	http_client.c	/^httpc_tcp_sent(void *arg, struct altcp_pcb *pcb, u16_t len)$/;"	f	typeref:typename:err_t	file:
+nWritten	httpc.old.c	/^uint16_t nWritten = 0; \/\/write buffer index$/;"	v	typeref:typename:uint16_t
+parse_state	http_client.c	/^    httpc_parse_state_t parse_state;$/;"	m	struct:_httpc_state	typeref:typename:httpc_parse_state_t	file:
+parse_state	httpc.c	/^    httpc_parse_state_t parse_state;$/;"	m	struct:_httpc_state	typeref:typename:httpc_parse_state_t	file:
+pcb	http_client.c	/^    struct altcp_pcb* pcb;$/;"	m	struct:_httpc_state	typeref:struct:altcp_pcb *	file:
+pcb	httpc.c	/^    struct altcp_pcb* pcb;$/;"	m	struct:_httpc_state	typeref:struct:altcp_pcb *	file:
+pcb_client	httpc.old.c	/^static struct tcp_pcb *pcb_client;$/;"	v	typeref:struct:tcp_pcb *	file:
+recv_fn	http_client.c	/^    altcp_recv_fn recv_fn;$/;"	m	struct:_httpc_state	typeref:typename:altcp_recv_fn	file:
+recv_fn	httpc.c	/^    altcp_recv_fn recv_fn;$/;"	m	struct:_httpc_state	typeref:typename:altcp_recv_fn	file:
+remote_addr	http_client.c	/^    ip_addr_t remote_addr;$/;"	m	struct:_httpc_state	typeref:typename:ip_addr_t	file:
+remote_addr	httpc.c	/^    ip_addr_t remote_addr;$/;"	m	struct:_httpc_state	typeref:typename:ip_addr_t	file:
+remote_port	http_client.c	/^    u16_t remote_port;$/;"	m	struct:_httpc_state	typeref:typename:u16_t	file:
+remote_port	httpc.c	/^    u16_t remote_port;$/;"	m	struct:_httpc_state	typeref:typename:u16_t	file:
+request	http_client.c	/^    struct pbuf *request;$/;"	m	struct:_httpc_state	typeref:struct:pbuf *	file:
+request	httpc.c	/^    struct pbuf *request;$/;"	m	struct:_httpc_state	typeref:struct:pbuf *	file:
+rx_content_len	http_client.c	/^    u32_t rx_content_len;$/;"	m	struct:_httpc_state	typeref:typename:u32_t	file:
+rx_content_len	httpc.c	/^    u32_t rx_content_len;$/;"	m	struct:_httpc_state	typeref:typename:u32_t	file:
+rx_hdrs	http_client.c	/^    struct pbuf *rx_hdrs;$/;"	m	struct:_httpc_state	typeref:struct:pbuf *	file:
+rx_hdrs	httpc.c	/^    struct pbuf *rx_hdrs;$/;"	m	struct:_httpc_state	typeref:struct:pbuf *	file:
+rx_http_version	http_client.c	/^    u16_t rx_http_version;$/;"	m	struct:_httpc_state	typeref:typename:u16_t	file:
+rx_http_version	httpc.c	/^    u16_t rx_http_version;$/;"	m	struct:_httpc_state	typeref:typename:u16_t	file:
+rx_status	http_client.c	/^    u16_t rx_status;$/;"	m	struct:_httpc_state	typeref:typename:u16_t	file:
+rx_status	httpc.c	/^    u16_t rx_status;$/;"	m	struct:_httpc_state	typeref:typename:u16_t	file:
+tcp_callback_connected	httpc.old.c	/^static err_t tcp_callback_connected(void *arg, struct tcp_pcb *pcb_new, err_t err)$/;"	f	typeref:typename:err_t	file:
+tcp_callback_error	httpc.old.c	/^static void tcp_callback_error(void *arg, err_t err)$/;"	f	typeref:typename:void	file:
+tcp_callback_poll	httpc.old.c	/^static err_t tcp_callback_poll(void *arg, struct tcp_pcb *tpcb)$/;"	f	typeref:typename:err_t	file:
+tcp_callback_recv	httpc.old.c	/^static err_t tcp_callback_recv(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err)$/;"	f	typeref:typename:err_t	file:
+tcp_callback_sent	httpc.old.c	/^static err_t tcp_callback_sent(void *arg, struct tcp_pcb *tpcb, u16_t len)$/;"	f	typeref:typename:err_t	file:
+timeout_ticks	http_client.c	/^    int timeout_ticks;$/;"	m	struct:_httpc_state	typeref:typename:int	file:
+timeout_ticks	httpc.c	/^    int timeout_ticks;$/;"	m	struct:_httpc_state	typeref:typename:int	file:
